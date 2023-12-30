@@ -1,4 +1,6 @@
-interface ButtonProps {
+import styled from "styled-components";
+
+export interface ButtonProps {
   /**
    * Is this the principal call to action on the page? If so, the button will be
    * filled with the primary accent color of the theme. Ideally, you should
@@ -33,6 +35,14 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
+const StyledButton = styled.button`
+  font-size: 1rem;
+  color: ${(props) => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.primary.mid};
+  border: 0.125rem solid ${(props) => props.theme.colors.primary.dark};
+  border-radius: ${(props) => props.theme.borderRadius.standard};
+`;
+
 /**
  * The standard button component. Should be used for forms, modals and actions
  * that don't change which page the user is on. If your action changes the page,
@@ -47,13 +57,13 @@ export const Button = ({
 }: ButtonProps): JSX.Element => {
   const mode = primary ? "primary" : "secondary";
   return (
-    <button
+    <StyledButton
       type="button"
       className={[`graffiti-button`, mode, size].join(" ")}
       style={{ backgroundColor }}
       {...props}
     >
       {label}
-    </button>
+    </StyledButton>
   );
 };
