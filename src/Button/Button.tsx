@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 export interface ButtonProps {
@@ -9,38 +10,87 @@ export interface ButtonProps {
   primary?: boolean;
 
   /**
-   * What background color to use. This overrides the background color set by
-   * the "primary" prop.
+   * The size of the button.
    */
-  backgroundColor?: string;
-
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large" | "square";
 
   /**
    * The text label inside the button.
    */
-  label: string;
+  label?: string;
 
   /**
-   * Which icon should appear next to the text of the button?
+   * The icon that should appear next to the text label.
    */
-  icon?: JSX.Element | HTMLElement;
+  icon?: ReactNode;
 
   /**
-   * Optional click handler
+   * Click handler
    */
   onClick?: () => void;
 }
 
-const StyledButton = styled.button`
-  font-size: 1rem;
-  color: ${(props) => props.theme.colors.white};
-  background: ${(props) => props.theme.colors.primary.mid};
-  border: 0.125rem solid ${(props) => props.theme.colors.primary.dark};
+const StyledButton = styled.button<ButtonProps>`
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
   border-radius: ${(props) => props.theme.borderRadius.standard};
+
+  padding: ${(props) => {
+    switch (props.size) {
+      case "large":
+        return "0.8rem 1.25rem";
+      case "medium":
+        return "0.625rem 1.25rem";
+      case "small":
+        return "0.4375rem 0.875rem";
+      default:
+        return "0.625rem 1.25rem";
+    }
+  }};
+
+  font-size: ${(props) => {
+    switch (props.size) {
+      case "large":
+        return "1.25rem";
+      case "medium":
+        return "1rem";
+      case "small":
+        return "0.875rem";
+      default:
+        return "1rem";
+    }
+  }};
+
+  color: ${(props) =>
+    props.primary ? props.theme.colors.white : props.theme.colors.grey.dark};
+
+  background-color: ${(props) =>
+    props.primary ? props.theme.colors.primary.mid : props.theme.colors.white};
+
+  border: 0.125rem solid
+    ${(props) =>
+      props.primary
+        ? props.theme.colors.primary.dark
+        : props.theme.colors.grey.light};
+
+  &:hover {
+    background-color: ${(props) =>
+      props.primary
+        ? props.theme.colors.primary.dark
+        : props.theme.colors.grey.light};
+  }
+`;
+
+const StyledIcon = styled.span`
+  margin-right: 0.5rem;
+  display: inline-flex;
+
+  & svg {
+    width: 1.25em;
+    height: 1.25em;
+  }
 `;
 
 /**
@@ -49,21 +99,15 @@ const StyledButton = styled.button`
  * you should consider using an Anchor component.
  */
 export const Button = ({
+  label,
+  icon,
   primary = false,
   size = "medium",
-  backgroundColor,
-  label,
   ...props
 }: ButtonProps): JSX.Element => {
-  const mode = primary ? "primary" : "secondary";
   return (
-    <StyledButton
-      type="button"
-      className={[`graffiti-button`, mode, size].join(" ")}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
+    <StyledButton type="button" size={size} primary={primary} {...props}>
+      {icon && <StyledIcon>{icon}</StyledIcon>} {label}
     </StyledButton>
   );
 };

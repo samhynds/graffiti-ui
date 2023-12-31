@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
 
   button {
     font-family: ${(props) => props.theme.font};
+    transition: background-color 200ms ease-out;
   }
 `;
 
