@@ -1,4 +1,4 @@
-export const lightTheme = {
+export const defaultTheme = {
   font: "'DM Sans', sans-serif;",
   borderRadius: {
     standard: "0.25rem",

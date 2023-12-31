@@ -107,7 +107,8 @@ export const Button = ({
 }: ButtonProps): JSX.Element => {
   return (
     <StyledButton type="button" size={size} primary={primary} {...props}>
-      {icon && <StyledIcon>{icon}</StyledIcon>} {label}
+      {icon && <StyledIcon>{icon}</StyledIcon>}
+      {label}
     </StyledButton>
   );
 };
