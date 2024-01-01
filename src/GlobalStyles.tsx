@@ -14,10 +14,14 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.font};
   }
 
-  button {
+  button, input {
     font-family: ${(props) => props.theme.font};
     transition: background-color 200ms ease-out;
   }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+   }
 `;
 
 export { GlobalStyles };

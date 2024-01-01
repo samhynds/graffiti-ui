@@ -10,6 +10,7 @@ describe("Button", () => {
       <Button $primary={true} label={buttonLabel} />
     );
 
+    expect(getByRole("button")).toBeDefined();
     expect(getByRole("button").textContent).toEqual(buttonLabel);
   });
 

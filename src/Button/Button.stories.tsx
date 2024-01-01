@@ -4,7 +4,7 @@ import { Button } from "./index";
 import { MagicWand, Lightning } from "@phosphor-icons/react";
 
 const meta = {
-  title: "Button",
+  title: "Buttons/Button",
   component: Button,
   parameters: {
     layout: "centered",
