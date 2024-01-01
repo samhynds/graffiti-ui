@@ -21,3 +21,17 @@ export const TextInputWithLabel: Story = {
     label: "Username",
   },
 };
+
+export const EmailInputWithLabel: Story = {
+  args: {
+    label: "Email",
+    type: "email",
+  },
+};
+
+export const PasswordInputWithLabel: Story = {
+  args: {
+    label: "Password",
+    type: "password",
+  },
+};

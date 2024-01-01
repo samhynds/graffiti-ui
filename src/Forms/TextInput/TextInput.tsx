@@ -10,7 +10,7 @@ export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
   label?: string;
 }
 
-const StyledTextInput = styled.input`
+const StyledTextInput = styled.input<TextInputProps>`
   font-size: 1rem;
   padding: 0.75rem 1rem;
   color: ${(props) => props.theme.colors.grey.dark};

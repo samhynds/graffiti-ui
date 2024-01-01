@@ -1,5 +1,5 @@
 import { expect, describe, it, vi } from "vitest";
-import { render } from "../../../test/utils";
+import { render, fireEvent } from "../../../test/utils";
 
 import { TextInput } from ".";
 
@@ -11,14 +11,15 @@ describe("TextInput", () => {
   });
 
   it("renders with a label", () => {
-    const { getByRole } = render(<TextInput />);
+    const labelText = "This is a label";
+    const { getByRole, getByLabelText } = render(
+      <TextInput label={labelText} />
+    );
 
-    // expect(getByRole("textbox").textContent).toEqual(buttonLabel);
-  });
+    const labelElement = getByLabelText(labelText);
+    const inputElement = getByRole("textbox");
 
-  it("focuses the input when the label is clicked", () => {
-    const { getByRole } = render(<TextInput />);
-
-    // expect(getByRole("textbox").textContent).toEqual(buttonLabel);
+    expect(labelElement).toBeDefined();
+    expect(inputElement).toBeDefined();
   });
 });
