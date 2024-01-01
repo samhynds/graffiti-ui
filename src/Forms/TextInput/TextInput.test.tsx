@@ -1,5 +1,5 @@
-import { expect, describe, it, vi } from "vitest";
-import { render, fireEvent } from "../../../test/utils";
+import { expect, describe, it } from "vitest";
+import { render } from "../../../test/utils";
 
 import { TextInput } from ".";
 
