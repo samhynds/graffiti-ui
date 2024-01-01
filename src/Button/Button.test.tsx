@@ -31,4 +31,17 @@ describe("Button", () => {
 
     await expect(spiedConsole).toHaveBeenCalledWith(logLine);
   });
+
+  it("passes an aria-label through to the rendered button", async () => {
+    const ariaLabelText = "This is a label";
+
+    const { getByRole } = render(
+      <Button label="Howdy" aria-label={ariaLabelText} />
+    );
+
+    expect(getByRole("button").hasAttribute("aria-label"));
+    expect(getByRole("button").getAttribute("aria-label")).toEqual(
+      ariaLabelText
+    );
+  });
 });
