@@ -5,8 +5,8 @@ export const defaultTheme = {
   },
   colors: {
     primary: {
-      dark: "hsl(212 80% 46%)",
-      mid: "hsl(212 97% 53%)",
+      dark: "hsl(212 97% 38%)",
+      mid: "hsl(212 97% 47%)",
     },
     aqua: {
       dark: "hsl(198 97% 24%)",

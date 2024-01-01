@@ -1,13 +1,13 @@
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import styled from "styled-components";
 
-export interface ButtonProps {
+export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
   /**
    * Is this the principal call to action on the page? If so, the button will be
    * filled with the primary accent color of the theme. Ideally, you should
    * only have one primary button per page at any time.
    */
-  primary?: boolean;
+  $primary?: boolean;
 
   /**
    * The size of the button.
@@ -30,6 +30,14 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
+export interface IconProps {
+  /**
+   * The size of the parent button component, automatically passed to this child
+   * icon component.
+   */
+  size: ButtonProps["size"];
+}
+
 const StyledButton = styled.button<ButtonProps>`
   display: flex;
   align-items: center;
@@ -45,6 +53,8 @@ const StyledButton = styled.button<ButtonProps>`
         return "0.625rem 1.25rem";
       case "small":
         return "0.4375rem 0.875rem";
+      case "square":
+        return "0.5rem";
       default:
         return "0.625rem 1.25rem";
     }
@@ -64,32 +74,34 @@ const StyledButton = styled.button<ButtonProps>`
   }};
 
   color: ${(props) =>
-    props.primary ? props.theme.colors.white : props.theme.colors.grey.dark};
+    props.$primary ? props.theme.colors.white : props.theme.colors.grey.dark};
 
   background-color: ${(props) =>
-    props.primary ? props.theme.colors.primary.mid : props.theme.colors.white};
+    props.$primary ? props.theme.colors.primary.mid : props.theme.colors.white};
 
   border: 0.125rem solid
     ${(props) =>
-      props.primary
+      props.$primary
         ? props.theme.colors.primary.dark
         : props.theme.colors.grey.light};
 
   &:hover {
     background-color: ${(props) =>
-      props.primary
+      props.$primary
         ? props.theme.colors.primary.dark
         : props.theme.colors.grey.light};
   }
 `;
 
-const StyledIcon = styled.span`
-  margin-right: 0.5rem;
+const StyledIcon = styled.span<IconProps>`
+  margin-right: ${(props) => (props.size === "square" ? "0" : "0.75rem")};
   display: inline-flex;
 
   & svg {
-    width: 1.25em;
-    height: 1.25em;
+    ${(props) =>
+      props.size === "square"
+        ? "width: 1.75em; height: 1.75em;"
+        : "width: 1.25em; height: 1.25em;"}
   }
 `;
 
@@ -101,13 +113,13 @@ const StyledIcon = styled.span`
 export const Button = ({
   label,
   icon,
-  primary = false,
+  $primary = false,
   size = "medium",
   ...props
 }: ButtonProps): JSX.Element => {
   return (
-    <StyledButton type="button" size={size} primary={primary} {...props}>
-      {icon && <StyledIcon>{icon}</StyledIcon>}
+    <StyledButton type="button" size={size} $primary={$primary} {...props}>
+      {icon && <StyledIcon size={size}>{icon}</StyledIcon>}
       {label}
     </StyledButton>
   );
