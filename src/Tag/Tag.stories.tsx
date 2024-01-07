@@ -25,3 +25,18 @@ export const StandardTag: Story = {
     $color: "aqua",
   },
 };
+
+export const TagInText: Story = {
+  args: {
+    label: "inside a tag!",
+    $color: "pink",
+  },
+  decorators: [
+    (Story) => (
+      <>
+        This is some text outside of a tag and <Story /> Also here is some text
+        after the tag.
+      </>
+    ),
+  ],
+};
