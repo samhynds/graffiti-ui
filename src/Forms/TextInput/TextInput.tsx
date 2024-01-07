@@ -19,7 +19,6 @@ const StyledTextInput = styled.input<TextInputProps>`
   margin-top: 0.5rem;
 
   &:focus {
-    color: ${(props) => props.theme.colors.grey.xdark};
     border-color: ${(props) => props.theme.colors.primary.mid};
   }
 `;
