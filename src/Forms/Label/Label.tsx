@@ -10,12 +10,13 @@ export interface LabelProps extends HTMLAttributes<HTMLLabelElement> {
 }
 
 const StyledLabel = styled.label<LabelProps>`
-  color: ${(props) => props.theme.colors.grey.xdark};
-  font-size: 0.875rem;
+  color: ${(props) => props.theme.colors.grey.dark};
+  font-size: ${(props) => (props.$layout === "row" ? "1rem" : "0.875rem")};
   font-weight: 500;
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: ${(props) => props.$layout};
+  ${(props) => props.$layout === "row" && "align-items: center;"}
 `;
 
 /**
