@@ -10,7 +10,7 @@ export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
   label: string;
 }
 
-const StyledRadio = styled.input`
+const StyledRadio = styled.input<RadioProps | HTMLAttributes<HTMLInputElement>>`
   width: 1.125rem;
   height: 1.125rem;
   color: ${(props) => props.theme.colors.white};
@@ -26,7 +26,7 @@ export const Radio = ({ label, ...props }: RadioProps): JSX.Element => {
   return (
     <>
       <Label $layout="row">
-        <StyledRadio type="Radio" {...props} />
+        <StyledRadio type="radio" {...props} />
         {label}
       </Label>
     </>
