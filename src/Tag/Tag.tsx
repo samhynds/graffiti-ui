@@ -28,7 +28,7 @@ const StyledTag = styled.span<{ $color: TagProps["$color"] }>`
 `;
 
 /**
- * Tag
+ * An inline component to highlight a piece of text.
  */
 export const Tag = ({ label, $color }: TagProps): JSX.Element => {
   return <StyledTag $color={$color}>{label}</StyledTag>;
