@@ -95,6 +95,7 @@ const StyledButton = styled.button<ButtonProps>`
 
 const StyledIcon = styled.span<IconProps>`
   margin-right: ${(props) => (props.size === "square" ? "0" : "0.75rem")};
+  ${(props) => props.size !== "square" && "margin-left: -0.2rem;"}
   display: inline-flex;
 
   & svg {
