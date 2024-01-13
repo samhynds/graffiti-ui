@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.font};
   }
 
-  button, input {
+  button, input, select, option {
     font-family: ${(props) => props.theme.font};
     transition: background-color 200ms ease-out;
   }
