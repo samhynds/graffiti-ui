@@ -1,5 +1,5 @@
 import { expect, describe, it } from "vitest";
-import { render } from "../../../test/utils";
+import { render, act } from "../../../test/utils";
 
 import { Dropdown } from ".";
 
@@ -17,24 +17,37 @@ const defaultProps = {
 
 describe("Dropdown", () => {
   it("renders the dropdown correctly", () => {
-    const { getByTestId } = render(<Dropdown {...defaultProps}></Dropdown>);
+    const { getByTestId, getByRole } = render(
+      <Dropdown {...defaultProps}></Dropdown>
+    );
     const dropdownElement = getByTestId("dropdown");
-
-    console.log(dropdownElement.textContent);
+    const buttonElement = getByRole("button");
 
     expect(dropdownElement).toBeDefined();
     expect(dropdownElement.textContent).toContain(defaultProps.label);
+
+    expect(buttonElement.textContent).toEqual(defaultProps.items[0].label);
 
     defaultProps.items.forEach((item) => {
       expect(dropdownElement.textContent).toContain(item.label);
     });
   });
 
-  // it("shows the items in the dropdown when the dropdown is clicked", () => {
-  //   const { getByRole } = render(<Dropdown></Dropdown>);
-  // });
+  it("changes the button text when an item is selected", () => {
+    const { getByRole, getByLabelText } = render(
+      <Dropdown {...defaultProps}></Dropdown>
+    );
 
-  // it("shows the items in the dropdown when the label is clicked", () => {
-  //   const { getByRole } = render(<Dropdown></Dropdown>);
-  // });
+    const itemToSelect = defaultProps.items[4];
+
+    const buttonElement = getByRole("button");
+    const elementToSelect = getByLabelText(itemToSelect.label);
+
+    act(() => {
+      buttonElement.click();
+      elementToSelect.click();
+    });
+
+    expect(buttonElement.textContent).toEqual(itemToSelect.label);
+  });
 });

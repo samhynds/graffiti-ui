@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, ChangeEvent } from "react";
 import styled from "styled-components";
 import { CaretDown } from "@phosphor-icons/react";
 
@@ -136,9 +136,16 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
  */
 export const Dropdown = ({ label, items }: DropdownProps): JSX.Element => {
   const [isActive, setIsActive] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(items[0]);
 
-  const handleClick = () => {
+  const handleIsActive = () => {
     setIsActive(!isActive);
+  };
+
+  const handleSelectItem = (e: ChangeEvent<HTMLInputElement>) => {
+    const selectedItem = items.find((item) => item.value === e.target.name)!;
+    setSelectedItem(selectedItem);
+    setIsActive(false);
   };
 
   return (
@@ -146,15 +153,22 @@ export const Dropdown = ({ label, items }: DropdownProps): JSX.Element => {
       <Label data-testid="dropdown">
         {label}
         <StyledDropdownWrapper $isActive={isActive}>
-          <StyledDropdownButton onClick={handleClick} $isActive={isActive}>
-            {items[0].label}
+          <StyledDropdownButton onClick={handleIsActive} $isActive={isActive}>
+            {selectedItem.label}
             <StyledDropdownButtonArrow $isActive={isActive}>
               <CaretDown />
             </StyledDropdownButtonArrow>
           </StyledDropdownButton>
           <StyledDropdownItems $isActive={isActive}>
             {items.map((item, i) => {
-              return <Radio label={item.label} name={item.value} key={i} />;
+              return (
+                <Radio
+                  label={item.label}
+                  name={item.value}
+                  key={i}
+                  onClick={handleSelectItem}
+                />
+              );
             })}
           </StyledDropdownItems>
         </StyledDropdownWrapper>
