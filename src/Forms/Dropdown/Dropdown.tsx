@@ -1,4 +1,4 @@
-import { useState, ChangeEvent } from "react";
+import { useState, MouseEvent } from "react";
 import styled from "styled-components";
 import { CaretDown } from "@phosphor-icons/react";
 
@@ -142,8 +142,10 @@ export const Dropdown = ({ label, items }: DropdownProps): JSX.Element => {
     setIsActive(!isActive);
   };
 
-  const handleSelectItem = (e: ChangeEvent<HTMLInputElement>) => {
-    const selectedItem = items.find((item) => item.value === e.target.name)!;
+  const handleSelectItem = (e: MouseEvent<HTMLInputElement>) => {
+    const selectedItem = items.find(
+      (item) => item.value === (e.target as HTMLInputElement).name
+    )!;
     setSelectedItem(selectedItem);
     setIsActive(false);
   };
