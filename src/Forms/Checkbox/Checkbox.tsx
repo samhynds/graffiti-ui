@@ -17,7 +17,7 @@ const StyledCheckbox = styled.input`
   border-radius: ${(props) => props.theme.borderRadius.standard};
   border: 0.125rem solid ${(props) => props.theme.colors.grey.light};
   margin-right: 0.625rem;
-  accent-color: ${(props) => props.theme.colors.primary.mid};
+  accent-color: ${(props) => props.theme.colors.blue.mid};
 `;
 
 /**

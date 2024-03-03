@@ -77,18 +77,18 @@ const StyledButton = styled.button<ButtonProps>`
     props.$primary ? props.theme.colors.white : props.theme.colors.grey.dark};
 
   background-color: ${(props) =>
-    props.$primary ? props.theme.colors.primary.mid : props.theme.colors.white};
+    props.$primary ? props.theme.colors.blue.mid : props.theme.colors.white};
 
   border: 0.125rem solid
     ${(props) =>
       props.$primary
-        ? props.theme.colors.primary.dark
+        ? props.theme.colors.blue.dark
         : props.theme.colors.grey.light};
 
   &:hover {
     background-color: ${(props) =>
       props.$primary
-        ? props.theme.colors.primary.dark
+        ? props.theme.colors.blue.dark
         : props.theme.colors.grey.light};
   }
 `;

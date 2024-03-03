@@ -120,7 +120,7 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
     }
 
     &:hover {
-      background: ${(props) => props.theme.colors.primary.mid};
+      background: ${(props) => props.theme.colors.blue.mid};
       color: ${(props) => props.theme.colors.white};
     }
   }

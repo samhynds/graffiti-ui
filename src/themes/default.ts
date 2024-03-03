@@ -4,9 +4,10 @@ export const defaultTheme = {
     standard: "0.25rem",
   },
   colors: {
-    primary: {
+    blue: {
       dark: "hsl(212 97% 38%)",
       mid: "hsl(212 97% 47%)",
+      light: "hsl(212 82% 88%)",
     },
     aqua: {
       dark: "hsl(198 97% 24%)",

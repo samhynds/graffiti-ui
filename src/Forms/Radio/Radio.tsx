@@ -15,7 +15,7 @@ const StyledRadio = styled.input<RadioProps | HTMLAttributes<HTMLInputElement>>`
   height: 1.125rem;
   color: ${(props) => props.theme.colors.white};
   margin-right: 0.625rem;
-  accent-color: ${(props) => props.theme.colors.primary.mid};
+  accent-color: ${(props) => props.theme.colors.blue.mid};
 `;
 
 /**
