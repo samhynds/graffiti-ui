@@ -79,7 +79,7 @@ const StyledButton = styled.button<ButtonProps>`
   background-color: ${(props) =>
     props.$primary ? props.theme.colors.blue.mid : props.theme.colors.white};
 
-  border: 0.125rem solid
+  border: 0.0625rem solid
     ${(props) =>
       props.$primary
         ? props.theme.colors.blue.dark
