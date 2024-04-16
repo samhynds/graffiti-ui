@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { X } from "react-bootstrap-icons";
 
 import { Button } from "../Button";
 
@@ -30,7 +31,6 @@ const StyledToastTitle = styled.div`
   font-weight: 500;
   color: ${(props) => props.theme.colors.grey.xdark};
   padding-right: 2rem;
-  margin-bottom: 0.5rem;
 `;
 
 const StyledToastDescription = styled.div`
@@ -47,10 +47,29 @@ const StyledToastButtonWrapper = styled.div`
   margin-top: 0.75rem;
 `;
 
+const StyledToastCloseButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: ${(props) => props.theme.colors.grey.dark};
+`;
+
+const StyledToastHeader = styled.header`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+`;
+
 export const Toast = (props: ToastProps) => {
   return (
     <StyledToast>
-      <StyledToastTitle>{props.title}</StyledToastTitle>
+      <StyledToastHeader>
+        <StyledToastTitle>{props.title}</StyledToastTitle>
+        <StyledToastCloseButton>
+          <X size={20} />
+        </StyledToastCloseButton>
+      </StyledToastHeader>
       {props.description && (
         <StyledToastDescription>{props.description}</StyledToastDescription>
       )}
