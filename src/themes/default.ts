@@ -18,6 +18,7 @@ export const defaultTheme = {
       dark: "hsl(0 0% 31%)",
       xdark: "hsl(0 0% 8%)",
       light: "hsl(0 0% 88%)",
+      xlight: "hsl(0 0% 95%)",
     },
     purple: {
       dark: "hsl(256 97% 24%)",
