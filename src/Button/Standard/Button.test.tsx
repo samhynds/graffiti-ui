@@ -1,5 +1,5 @@
 import { expect, describe, it, vi } from "vitest";
-import { render } from "../../test/utils";
+import { render } from "../../../test/utils";
 
 import { Button } from ".";
 
@@ -7,7 +7,7 @@ describe("Button", () => {
   it("renders the primary variant correctly when provided with primary and label props", () => {
     const buttonLabel = "Button Text";
     const { getByRole } = render(
-      <Button $primary={true} label={buttonLabel} />
+      <Button $primary={true} label={buttonLabel} />,
     );
 
     expect(getByRole("button")).toBeDefined();
@@ -24,7 +24,7 @@ describe("Button", () => {
         onClick={() => {
           console.log(logLine);
         }}
-      />
+      />,
     );
 
     const button = getByRole("button");
@@ -37,12 +37,12 @@ describe("Button", () => {
     const ariaLabelText = "This is a label";
 
     const { getByRole } = render(
-      <Button label="Howdy" aria-label={ariaLabelText} />
+      <Button label="Howdy" aria-label={ariaLabelText} />,
     );
 
     expect(getByRole("button").hasAttribute("aria-label"));
     expect(getByRole("button").getAttribute("aria-label")).toEqual(
-      ariaLabelText
+      ariaLabelText,
     );
   });
 });

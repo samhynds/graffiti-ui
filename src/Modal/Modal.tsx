@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { X } from "react-bootstrap-icons";
 
 import { Overlay } from "../Overlay";
-import { Button } from "../Button";
+import { Button } from "../Button/Standard";
 
 export interface ModalProps {
   title?: string;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { X } from "react-bootstrap-icons";
 
-import { Button } from "../Button";
+import { Button } from "../Button/Standard";
 
 export interface ToastProps {
   title: string;
