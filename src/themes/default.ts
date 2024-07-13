@@ -4,10 +4,15 @@ export const defaultTheme = {
     standard: "0.25rem",
   },
   colors: {
+    link: {
+      text: "hsl(212 97% 47%)",
+      bg: "hsl(212 82% 95%)",
+    },
     blue: {
       dark: "hsl(212 97% 38%)",
       mid: "hsl(212 97% 47%)",
       light: "hsl(212 82% 88%)",
+      xlight: "hsl(212 82% 95%)",
     },
     aqua: {
       dark: "hsl(198 97% 24%)",

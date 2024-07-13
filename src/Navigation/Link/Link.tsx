@@ -20,19 +20,19 @@ const StyledNavigationLink = styled(Link)<
       case "sm":
         return `
           font-size: 0.8rem;
-          gap: 0.25rem;
+          gap: 0.35rem;
           padding: 0.25rem 0.5rem;
         `;
       case "md":
         return `
         font-size: 1rem;
-        gap: 0.35rem;
+        gap: 0.5rem;
         padding: 0.25rem 0.5rem;
       `;
       case "lg":
         return `
         font-size: 1.25rem;
-        gap: 0.5rem;
+        gap: 0.75rem;
         padding: 0.35rem 0.75rem;
       `;
       default:
