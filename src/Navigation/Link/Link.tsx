@@ -45,13 +45,13 @@ const StyledNavigationLink = styled(Link)<
   }};
   text-decoration: none;
   color: ${({ theme }) => theme.colors.grey.xdark};
+  border-radius: 0.75rem;
 
   transition: all 200ms ease-out;
 
   &:hover {
     background: ${({ theme }) => theme.colors.link.bg};
     color: ${({ theme }) => theme.colors.link.text};
-    border-radius: 0.75rem;
   }
 `;
 
