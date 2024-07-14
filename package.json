@@ -33,7 +33,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
-    "test": "vitest run --coverage"
+    "test": "LANG='en_GB.UTF-8'; vitest run --coverage"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15",
