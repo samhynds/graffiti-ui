@@ -16,10 +16,10 @@ const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
   display: flex;
   align-items: center;
   justify-content: center;
-  color: ${(props) => props.theme.colors.grey.xdark};
   width: ${({ $size }) => $size};
   height: ${({ $size }) => $size};
   transition: color 0.2s;
+  color: inherit;
 
   svg {
     width: 100%;
