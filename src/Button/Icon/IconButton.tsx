@@ -7,7 +7,7 @@ export interface IconButtonProps {
   onClick: () => void;
 }
 
-const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
+export const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
   background-color: transparent;
   border: none;
   cursor: pointer;

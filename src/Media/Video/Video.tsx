@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { VideoControls } from "./VideoControls";
+import { VideoControls, StyledVideoControls } from "./VideoControls";
 import { useState, useEffect, useRef } from "react";
 
 export interface VideoProps {
@@ -13,13 +13,36 @@ export interface VideoProps {
   muted?: boolean;
   preload?: "none" | "metadata" | "auto";
 
+  $showControls?: "always" | "hover";
   $width: string;
   $height: string;
 }
 
-const StyledVideoWrapper = styled.div`
+const StyledVideoWrapper = styled.div<Pick<VideoProps, "$showControls">>`
   display: flex;
   position: relative;
+
+  ${({ $showControls }): string => {
+    if ($showControls === "hover") {
+      return `
+        ${StyledVideoControls} {
+          opacity: 0;
+        }
+
+        &:hover {
+          ${StyledVideoControls} {
+            opacity: 1;
+          }
+        }
+      `;
+    }
+
+    return `
+      ${StyledVideoControls} {
+        opacity: 1;
+      }
+    `;
+  }}
 `;
 
 const StyledVideo = styled.video<Pick<VideoProps, "$width" | "$height">>`
@@ -34,6 +57,7 @@ const StyledVideo = styled.video<Pick<VideoProps, "$width" | "$height">>`
 export const Video = ({
   sources,
   controls = true,
+  $showControls = "hover",
   autoPlay = false,
   loop = false,
   muted = false,
@@ -41,7 +65,7 @@ export const Video = ({
   $width,
   $height,
 }: VideoProps) => {
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
@@ -51,7 +75,7 @@ export const Video = ({
   }, []);
 
   return (
-    <StyledVideoWrapper>
+    <StyledVideoWrapper $showControls={$showControls}>
       <StyledVideo
         controls={false}
         autoPlay={autoPlay}

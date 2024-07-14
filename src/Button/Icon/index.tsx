@@ -1,2 +1,2 @@
-import { IconButton, IconButtonProps } from "./IconButton";
-export { IconButton, type IconButtonProps };
+import { IconButton, StyledIconButton, IconButtonProps } from "./IconButton";
+export { IconButton, StyledIconButton, type IconButtonProps };

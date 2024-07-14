@@ -18,7 +18,7 @@ export interface RowProps {
   $alignItems?: string;
 }
 
-const StyledRow = styled.div<Omit<RowProps, "children">>`
+export const StyledRow = styled.div<Omit<RowProps, "children">>`
   display: flex;
   flex-direction: row;
   ${(props) => (props.$width ? `width: ${props.$width};` : null)};
