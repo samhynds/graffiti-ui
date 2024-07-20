@@ -1,16 +1,16 @@
-import { HTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 
 import { Label } from "../Label";
 
-export interface RadioProps extends HTMLAttributes<HTMLInputElement> {
+export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Label to display next to the radio button.
    */
   label: string;
 }
 
-const StyledRadio = styled.input<RadioProps | HTMLAttributes<HTMLInputElement>>`
+const StyledRadio = styled.input<Omit<RadioProps, "label">>`
   width: 1.125rem;
   height: 1.125rem;
   color: ${(props) => props.theme.colors.white};

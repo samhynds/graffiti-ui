@@ -1,9 +1,9 @@
-import { HTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 
 import { Label } from "../Label";
 
-export interface TextInputProps extends HTMLAttributes<HTMLInputElement> {
+export interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
   /**
    * Label to display above the text input.
    */
