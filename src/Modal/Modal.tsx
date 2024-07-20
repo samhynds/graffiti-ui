@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { X } from "react-bootstrap-icons";
+import { X } from "@phosphor-icons/react";
 
 import { Overlay } from "../Overlay";
 import { Button } from "../Button/Standard";
