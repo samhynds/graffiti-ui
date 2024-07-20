@@ -38,7 +38,6 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15",
     "react": "^18.2.0",
-    "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.1",
     "styled-components": "^6.1.6"
@@ -51,13 +50,11 @@
     "@storybook/addon-storysource": "^7.6.6",
     "@storybook/blocks": "^7.6.6",
     "@storybook/react": "^7.6.6",
-    "@storybook/react-vite": "^7.6.6",
     "@testing-library/react": "^14.1.2",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
-    "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -66,7 +63,6 @@
     "jsdom": "^23.0.1",
     "storybook": "^7.6.6",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8",
     "vitest": "^1.1.1"
   }
 }
