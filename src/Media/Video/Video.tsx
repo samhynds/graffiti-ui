@@ -57,7 +57,7 @@ const StyledVideo = styled.video<Pick<VideoProps, "$width" | "$height">>`
 export const Video = ({
   sources,
   controls = true,
-  $showControls = "hover",
+  $showControls = "always",
   autoPlay = false,
   loop = false,
   muted = false,
@@ -75,7 +75,10 @@ export const Video = ({
   }, []);
 
   return (
-    <StyledVideoWrapper $showControls={$showControls}>
+    <StyledVideoWrapper
+      $showControls={$showControls}
+      data-testid="video-wrapper"
+    >
       <StyledVideo
         controls={false}
         autoPlay={autoPlay}
@@ -85,6 +88,7 @@ export const Video = ({
         $height={$height}
         preload={preload}
         ref={videoRef}
+        data-testid="video-element"
       >
         {sources.map((source, i) => (
           <source key={i} src={source.src} type={source.type} />

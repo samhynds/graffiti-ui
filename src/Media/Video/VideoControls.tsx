@@ -112,10 +112,10 @@ const SeekBar = ({ currentTime, duration, videoRef }: SeekBarProps) => {
  */
 export const VideoControls = ({ videoRef }: VideoControlProps) => {
   const [isPlaying, setIsPlaying] = useState(
-    !videoRef.current!.paused || false,
+    !videoRef.current!.paused || false
   );
   const [currentTime, setCurrentTime] = useState(
-    String(videoRef.current!.currentTime),
+    String(videoRef.current!.currentTime)
   );
   const [duration, setDuration] = useState(String(videoRef.current!.duration));
   const [rawTime, setRawTime] = useState(videoRef.current!.currentTime);
@@ -168,7 +168,7 @@ export const VideoControls = ({ videoRef }: VideoControlProps) => {
   videoRef.current!.addEventListener("ended", () => setIsPlaying(false));
 
   return (
-    <StyledVideoControls>
+    <StyledVideoControls data-testid="video-controls">
       <VideoControlsTop>
         <SeekBar
           currentTime={rawTime}
