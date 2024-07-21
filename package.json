@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "UI and component library for creating web applications with React.",
   "type": "module",
-  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "main": "dist/index.esm.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/samhynds/graffiti-ui.git"
