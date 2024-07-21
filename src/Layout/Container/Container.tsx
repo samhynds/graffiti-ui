@@ -28,7 +28,6 @@ const StyledContainer = styled.div<
 >`
   width: 100vw;
   min-height: 100vh;
-  border: 1px dashed #4473ff;
   display: flex;
   flex-direction: ${(props) => props.$flexDirection};
   justify-content: ${(props) => props.$alignment};
@@ -37,7 +36,6 @@ const StyledContainer = styled.div<
 // Add breakpoints for screen sizes
 const StyledInnerContainer = styled.div<Pick<ContainerProps, "$width">>`
   width: ${(props) => props.$width};
-  border: 1px dashed #4473ff;
 `;
 
 export const Container = ({
