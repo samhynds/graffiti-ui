@@ -34,16 +34,9 @@
     "build-storybook": "storybook build",
     "test": "LANG='en_GB.UTF-8'; vitest run --coverage"
   },
-  "dependencies": {
-    "@phosphor-icons/react": "^2.0.15",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.8",
-    "eslint-plugin-storybook": "^0.8.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.24.1",
@@ -64,8 +57,14 @@
     "@testing-library/react": "^14.1.2",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^7.16.1",
+    "@typescript-eslint/parser": "^7.16.1",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^1.6.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.8",
+    "eslint-plugin-storybook": "^0.8.0",
     "jsdom": "^23.0.1",
     "rollup": "^4.19.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
