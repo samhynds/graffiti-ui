@@ -22,24 +22,40 @@ const StyledNavigationLink = styled(Link)<
           font-size: 0.8rem;
           gap: 0.35rem;
           padding: 0.25rem 0.5rem;
+
+        svg {
+          font-size: 0.9rem;
+        }
         `;
       case "md":
         return `
         font-size: 1rem;
         gap: 0.5rem;
         padding: 0.25rem 0.5rem;
+
+        svg {
+          font-size: 1.1rem;
+        }
       `;
       case "lg":
         return `
-        font-size: 1.25rem;
-        gap: 0.75rem;
+        font-size: 1.125rem;
+        gap: 0.6rem;
         padding: 0.35rem 0.75rem;
+
+        svg {
+          font-size: 1.4rem;
+        }
       `;
       default:
         return `
           font-size: 1rem;
           gap: 0.5rem;
           padding: 0.25rem 0.5rem;
+
+          svg {
+            font-size: 1.1rem;
+          }
         `;
     }
   }};
