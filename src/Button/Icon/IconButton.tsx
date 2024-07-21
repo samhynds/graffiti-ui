@@ -5,6 +5,7 @@ export interface IconButtonProps {
   icon: ReactNode;
   $size?: string;
   onClick: () => void;
+  className?: string;
 }
 
 export const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
@@ -35,9 +36,10 @@ export const IconButton = ({
   icon,
   $size = "1rem",
   onClick,
+  className,
 }: IconButtonProps): JSX.Element => {
   return (
-    <StyledIconButton $size={$size} onClick={onClick}>
+    <StyledIconButton className={className} $size={$size} onClick={onClick}>
       {icon}
     </StyledIconButton>
   );

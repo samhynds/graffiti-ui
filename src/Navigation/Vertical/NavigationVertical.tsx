@@ -50,8 +50,8 @@ export const NavigationVertical = ({
 }: NavigationVerticalProps) => {
   return (
     <StyledNavigationVertical $linkSize={$linkSize}>
-      {links.map((link) => {
-        return <NavigationLink $linkSize={$linkSize} {...link} />;
+      {links.map((link, i) => {
+        return <NavigationLink key={i} $linkSize={$linkSize} {...link} />;
       })}
     </StyledNavigationVertical>
   );
