@@ -29,7 +29,6 @@ const StyledLoadingSpinner = styled.div<LoadingSpinnerProps>`
   }
 `;
 
-// loading spinner component
 export const LoadingSpinner = ({
   $size = "3rem",
   $ringWidth = "0.25rem",

@@ -2,15 +2,15 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "esnext",
-    "jsx": "react-jsx", // or "react" if using React < 17
+    "jsx": "react-jsx",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist", // Ensure output directory is set
+    "outDir": "./dist",
     "rootDir": "src"
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
-  "exclude": ["node_modules", "dist", "**/*.stories.tsx", "**/*.test.tsx"]
+  "exclude": ["node_modules", "dist", "**/*.stories.tsx"]
 }

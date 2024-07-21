@@ -8,6 +8,6 @@ export default defineConfig({
       provider: "v8",
       exclude: ["src/**/*.stories.tsx", "src/**/index.tsx"],
       include: ["src/**/*.tsx"],
-    },
+    }
   },
 });

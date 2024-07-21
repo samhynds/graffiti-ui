@@ -1,4 +1,3 @@
-// loading spinner tests
 import { expect, describe, it } from "vitest";
 import { render } from "../../../test/utils";
 
