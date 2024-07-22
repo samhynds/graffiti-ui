@@ -16,6 +16,11 @@ export interface ColumnProps {
   $gap?: string;
   $justifyContent?: string;
   $alignItems?: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledColumn = styled.div<Omit<ColumnProps, "children">>`
@@ -41,6 +46,7 @@ export const Column = ({
   $justifyContent,
   $alignItems,
   children,
+  className,
 }: ColumnProps) => {
   return (
     <StyledColumn
@@ -50,6 +56,7 @@ export const Column = ({
       $gap={$gap}
       $justifyContent={$justifyContent}
       $alignItems={$alignItems}
+      className={className}
     >
       {children}
     </StyledColumn>

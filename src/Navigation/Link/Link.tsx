@@ -7,6 +7,11 @@ export interface NavigationLinkProps {
   $linkSize?: "sm" | "md" | "lg";
   icon?: ReactNode;
   to: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledNavigationLink = styled(Link)<
@@ -76,9 +81,10 @@ export const NavigationLink = ({
   icon,
   $linkSize,
   to,
+  className,
 }: NavigationLinkProps) => {
   return (
-    <StyledNavigationLink $linkSize={$linkSize} to={to}>
+    <StyledNavigationLink $linkSize={$linkSize} to={to} className={className}>
       {icon}
       {text}
     </StyledNavigationLink>

@@ -21,6 +21,11 @@ export interface ContainerProps {
    * The direction of the content inside the container.
    */
   $flexDirection: "column" | "row";
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledContainer = styled.div<
@@ -43,9 +48,14 @@ export const Container = ({
   $alignment,
   $flexDirection,
   children,
+  className,
 }: ContainerProps) => {
   return (
-    <StyledContainer $alignment={$alignment} $flexDirection={$flexDirection}>
+    <StyledContainer
+      $alignment={$alignment}
+      $flexDirection={$flexDirection}
+      className={className}
+    >
       <StyledInnerContainer $width={$width}>{children}</StyledInnerContainer>
     </StyledContainer>
   );

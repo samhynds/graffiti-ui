@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { IconButton, StyledIconButton } from "../../Button/Icon";
+import { IconButton } from "../../Button/Icon";
 import {
   Play,
   Pause,
@@ -7,7 +7,7 @@ import {
   SpeakerSimpleSlash,
 } from "@phosphor-icons/react";
 import { useState } from "react";
-import { StyledRow } from "../../Layout/Row";
+import { Row } from "../../Layout/Row";
 
 export interface VideoControlProps {
   videoRef: React.RefObject<HTMLVideoElement>;
@@ -40,26 +40,28 @@ export const StyledVideoControls = styled.div`
   transition: opacity 0.2s;
 `;
 
-const VideoControlsTop = styled(StyledRow)`
+const VideoControlsTop = styled(Row)`
   width: 100%;
   border-radius: 2px;
 `;
 
-const VideoControlsBottom = styled(StyledRow)`
+const VideoControlsIconButton = styled(IconButton)`
+  width: ${({ $size }) => $size};
+  height: ${({ $size }) => $size};
+  opacity: 0.8;
+  transition: opacity 0.2s;
+
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+`;
+
+const VideoControlsBottom = styled(Row)`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
-  ${StyledIconButton} {
-    opacity: 0.8;
-    transition: opacity 0.2s;
-  }
-
-  ${StyledIconButton}:hover {
-    color: white;
-    opacity: 1;
-  }
 `;
 
 const VideoControlsInner = styled.div`
@@ -178,7 +180,7 @@ export const VideoControls = ({ videoRef }: VideoControlProps) => {
       </VideoControlsTop>
       <VideoControlsBottom>
         <VideoControlsInner>
-          <IconButton
+          <VideoControlsIconButton
             icon={isPlaying ? <Pause weight="fill" /> : <Play weight="fill" />}
             onClick={handlePlayPause}
             $size="1.4rem"
@@ -189,7 +191,7 @@ export const VideoControls = ({ videoRef }: VideoControlProps) => {
           <span>
             {currentTime} / {duration}
           </span>
-          <IconButton
+          <VideoControlsIconButton
             icon={isMuted ? <SpeakerSimpleSlash /> : <SpeakerSimpleHigh />}
             onClick={handleMute}
             $size="1.4rem"

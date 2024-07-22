@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export interface OverlayProps {
   $color?: "light" | "dark";
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledOverlay = styled.div<OverlayProps>`
@@ -18,6 +23,12 @@ const StyledOverlay = styled.div<OverlayProps>`
   z-index: 100;
 `;
 
-export const Overlay = ({ $color = "light" }: OverlayProps) => {
-  return <StyledOverlay $color={$color} data-testid="overlay" />;
+export const Overlay = ({ $color = "light", className }: OverlayProps) => {
+  return (
+    <StyledOverlay
+      $color={$color}
+      data-testid="overlay"
+      className={className}
+    />
+  );
 };

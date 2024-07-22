@@ -8,6 +8,11 @@ export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
    * Label to display next to the radio button.
    */
   label: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledRadio = styled.input<Omit<RadioProps, "label">>`

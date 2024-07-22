@@ -5,6 +5,11 @@ export interface TableProps {
     headings: string[];
     rows: (string | number | boolean)[][];
   };
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledTable = styled.table`
@@ -37,9 +42,9 @@ const StyledTable = styled.table`
   }
 `;
 
-export const Table = ({ data }: TableProps) => {
+export const Table = ({ data, className }: TableProps) => {
   return (
-    <StyledTable>
+    <StyledTable className={className}>
       <thead>
         <tr>
           {data.headings.map((heading, i) => (

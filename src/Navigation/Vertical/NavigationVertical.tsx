@@ -10,6 +10,11 @@ export interface NavigationVerticalProps {
   }[];
 
   $linkSize?: NavigationLinkProps["$linkSize"];
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledNavigationVertical = styled.div<
@@ -47,9 +52,10 @@ const StyledNavigationVertical = styled.div<
 export const NavigationVertical = ({
   links,
   $linkSize,
+  className,
 }: NavigationVerticalProps) => {
   return (
-    <StyledNavigationVertical $linkSize={$linkSize}>
+    <StyledNavigationVertical $linkSize={$linkSize} className={className}>
       {links.map((link, i) => {
         return <NavigationLink key={i} $linkSize={$linkSize} {...link} />;
       })}

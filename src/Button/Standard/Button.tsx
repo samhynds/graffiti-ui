@@ -28,6 +28,11 @@ export interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
    * Click handler
    */
   onClick?: () => void;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 export interface IconProps {

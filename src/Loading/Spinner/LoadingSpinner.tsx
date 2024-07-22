@@ -5,6 +5,11 @@ export interface LoadingSpinnerProps {
   $ringWidth?: string;
   $ringColor?: string;
   $arcColor?: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledLoadingSpinner = styled.div<LoadingSpinnerProps>`
@@ -34,6 +39,7 @@ export const LoadingSpinner = ({
   $ringWidth = "0.25rem",
   $ringColor,
   $arcColor,
+  className,
 }: LoadingSpinnerProps) => {
   return (
     <StyledLoadingSpinner
@@ -42,6 +48,7 @@ export const LoadingSpinner = ({
       $ringWidth={$ringWidth}
       $ringColor={$ringColor}
       $arcColor={$arcColor}
+      className={className}
     />
   );
 };

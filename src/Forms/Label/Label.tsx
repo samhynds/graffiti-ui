@@ -7,6 +7,11 @@ export interface LabelProps extends HTMLAttributes<HTMLLabelElement> {
    * alongside each other (row)?
    */
   $layout?: "column" | "row";
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledLabel = styled.label<LabelProps>`

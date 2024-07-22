@@ -11,6 +11,11 @@ export interface HeadingProps {
    * The content of the heading.
    */
   children: ReactNode;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 // While this component is defined as an "h1" here, it will be overridden
@@ -58,9 +63,13 @@ const StyledHeading = styled.h1<HeadingProps>`
 /**
  * A heading component.
  */
-export const Heading = ({ $level, children }: HeadingProps): JSX.Element => {
+export const Heading = ({
+  $level,
+  children,
+  className,
+}: HeadingProps): JSX.Element => {
   return (
-    <StyledHeading as={`h${$level}`} $level={$level}>
+    <StyledHeading as={`h${$level}`} $level={$level} className={className}>
       {children}
     </StyledHeading>
   );

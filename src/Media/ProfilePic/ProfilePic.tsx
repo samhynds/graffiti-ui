@@ -4,6 +4,11 @@ export interface ProfilePicProps {
   src: string;
   alt?: string;
   $size: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledProfilePic = styled.img<Pick<ProfilePicProps, "$size">>`
@@ -19,6 +24,9 @@ export const ProfilePic = ({
   src,
   alt,
   $size,
+  className,
 }: ProfilePicProps): JSX.Element => {
-  return <StyledProfilePic src={src} alt={alt} $size={$size} />;
+  return (
+    <StyledProfilePic src={src} alt={alt} $size={$size} className={className} />
+  );
 };

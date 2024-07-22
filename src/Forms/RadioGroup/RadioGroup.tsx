@@ -17,6 +17,11 @@ export interface RadioGroupProps extends HTMLAttributes<HTMLInputElement> {
    * Identifier to tie the multiple radio buttons together.
    */
   groupName: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledRadioGroup = styled.fieldset<

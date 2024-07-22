@@ -6,6 +6,11 @@ export interface CardProps {
    * The content of the Card.
    */
   children: ReactNode;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledCard = styled.div`
@@ -25,6 +30,6 @@ const StyledCard = styled.div`
   }
 `;
 
-export const Card = ({ children }: CardProps) => {
-  return <StyledCard>{children}</StyledCard>;
+export const Card = ({ children, className }: CardProps) => {
+  return <StyledCard className={className}>{children}</StyledCard>;
 };

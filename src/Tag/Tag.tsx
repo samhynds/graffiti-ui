@@ -18,6 +18,11 @@ export interface TagProps {
     | "pink"
     | "orange"
     | "yellow";
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledTag = styled.span<{ $color: TagProps["$color"] }>`
@@ -30,6 +35,10 @@ const StyledTag = styled.span<{ $color: TagProps["$color"] }>`
 /**
  * An inline component to highlight a piece of text.
  */
-export const Tag = ({ label, $color }: TagProps): JSX.Element => {
-  return <StyledTag $color={$color}>{label}</StyledTag>;
+export const Tag = ({ label, $color, className }: TagProps): JSX.Element => {
+  return (
+    <StyledTag $color={$color} className={className}>
+      {label}
+    </StyledTag>
+  );
 };

@@ -8,6 +8,11 @@ export interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
    * Label to display above the text input.
    */
   label?: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledTextInput = styled.input<TextInputProps>`

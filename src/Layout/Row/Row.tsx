@@ -16,9 +16,14 @@ export interface RowProps {
   $gap?: string;
   $justifyContent?: string;
   $alignItems?: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
-export const StyledRow = styled.div<Omit<RowProps, "children">>`
+const StyledRow = styled.div<Omit<RowProps, "children">>`
   display: flex;
   flex-direction: row;
   ${(props) => (props.$width ? `width: ${props.$width};` : null)};
@@ -41,6 +46,7 @@ export const Row = ({
   $justifyContent,
   $alignItems,
   children,
+  className,
 }: RowProps) => {
   return (
     <StyledRow
@@ -50,6 +56,7 @@ export const Row = ({
       $gap={$gap}
       $justifyContent={$justifyContent}
       $alignItems={$alignItems}
+      className={className}
     >
       {children}
     </StyledRow>

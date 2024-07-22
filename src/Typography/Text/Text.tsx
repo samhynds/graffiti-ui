@@ -6,6 +6,11 @@ export interface TextProps {
    * The content of the text.
    */
   children: ReactNode;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledText = styled.div<TextProps>`
@@ -37,6 +42,6 @@ const StyledText = styled.div<TextProps>`
   }
 `;
 
-export const Text = ({ children }: TextProps) => {
-  return <StyledText>{children}</StyledText>;
+export const Text = ({ children, className }: TextProps) => {
+  return <StyledText className={className}>{children}</StyledText>;
 };

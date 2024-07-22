@@ -85,7 +85,9 @@ const StyledDropdownButtonArrow = styled.div<DropdownActiveProps>`
 
 const StyledDropdownItems = styled.div<DropdownActiveProps>`
   overflow: hidden;
-  transition: max-height 200ms ease-out, box-shadow 200ms ease-out;
+  transition:
+    max-height 200ms ease-out,
+    box-shadow 200ms ease-out;
   background: ${(props) => props.theme.colors.white};
   width: 100%;
   max-height: 0;

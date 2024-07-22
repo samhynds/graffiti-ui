@@ -5,10 +5,14 @@ export interface IconButtonProps {
   icon: ReactNode;
   $size?: string;
   onClick: () => void;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
   className?: string;
 }
 
-export const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
+const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
   background-color: transparent;
   border: none;
   cursor: pointer;

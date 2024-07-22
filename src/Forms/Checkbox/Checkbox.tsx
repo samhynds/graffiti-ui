@@ -8,6 +8,11 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
    * Label to display next to the checkbox.
    */
   label: string;
+
+  /**
+   * Allows component to be extended by consumers.
+   */
+  className?: string;
 }
 
 const StyledCheckbox = styled.input`
