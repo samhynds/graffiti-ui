@@ -21,8 +21,7 @@ There are a number of example projects made with Graffiti UI available to [view 
 
 - 💾 [Installation](#installation)
 - 👀 [Demos](https://samhynds.github.io/graffiti-demos)
-- 📘 [Storybook](https://samhynds.github.io/graffiti-ui/storybook)
-- 📃 [Documentation](https://samhynds.github.io/graffiti-ui/docs)
+- 📘 [Storybook & Documentation](https://samhynds.github.io/graffiti-ui)
 - ⚖️ [License](#license)
 
 ## Installation
