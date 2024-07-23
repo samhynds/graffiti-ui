@@ -5,20 +5,25 @@
 > [!NOTE]
 > Graffiti is a work-in-progress and a stable version has not yet been released.
 
-Graffiti is a UI component library implemented in React with TypeScript. It's designed to be simple and customisable for use in UIs with various colour schemes and aesthetics.
+Graffiti is a UI component library implemented in React with TypeScript. It's designed to have simple and clear standard styling which is customisable for use in UIs with various colour schemes and aesthetics.
+
+Graffiti UI is intended for use with:
+
+- ESM only projects
+- React v18
+- TypeScript
+- Styled Components - if you want to customse the styling of the components
+- React Router - if you're using the [Navigation components](./src/Navigation)
+
+There are a number of example projects made with Graffiti UI available to [view here](https://samhynds.github.io/graffiti-demos). The source code for these example projects can be found [here](https://github.com/samhynds/graffiti-demos) so you can see how to use Graffiti UI in your own projects.
 
 ## Table of contents
 
-- 📃 [Documentation](#documentation)
-- 📘 [Storybook](https://samhynds.github.io/graffiti-ui/)
-- 🚀 [Features](#features)
 - 💾 [Installation](#installation)
-- 🤔 [Usage](#usage)
+- 👀 [Demos](https://samhynds.github.io/graffiti-demos)
+- 📘 [Storybook](https://samhynds.github.io/graffiti-ui/storybook)
+- 📃 [Documentation](https://samhynds.github.io/graffiti-ui/docs)
 - ⚖️ [License](#license)
-
-## Documentation
-
-## Features
 
 ## Installation
 
@@ -30,6 +35,6 @@ npm install @samgl/graffiti-ui
 yarn add @samgl/graffiti-ui
 ```
 
-## Usage
-
 ## License
+
+[MIT License](LICENSE)
