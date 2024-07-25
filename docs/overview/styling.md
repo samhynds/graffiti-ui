@@ -30,7 +30,7 @@ const CustomButton = styled(Button)`
 `;
 ```
 
-This will create a new component called `CustomButton` that inherits the styles of the `Button` component, but overrides the background color. The other styles from the button will remain as they're defined in the component. You can then use this new component in your app like any other component:
+This will create a new component called `CustomButton` that inherits the styles of the `Button` component, but overrides the specified styles. The other styles from the button will remain as they're defined in the component. You can then use this new component in your app like any other component:
 
 ```tsx
 <CustomButton label="Click me!" />
