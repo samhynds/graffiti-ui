@@ -25,7 +25,7 @@ yarn add @samgl/graffiti-ui
 
 ## Usage
 
-To get started with Graffiti, you'll need to import the themes, global styles, and optionally react-router if you want to use the navigation components. Then, wrap your react app like so:
+To get started with Graffiti, you'll need to import the themes, global styles, and optionally react-router if you want to use the navigation components. Then, wrap your React app like so:
 
 ```tsx
 // main.tsx - your main entry point
@@ -64,18 +64,24 @@ import {
 const App = () => {
   return (
     <Container $width="800px" $alignment="center" $flexDirection="row">
-      <Row>
-        <Column>
-          <Heading level={1}>Hello, world!</Heading>
-          <Text>This is a paragraph.</Text>
-        </Column>
-      </Row>
-      <Row>
-        <Column>
+      <Column>
+        <Heading $level={1}>Welcome to your Graffiti app!</Heading>
+      </Column>
+      <Column $gap="20px">
+        <Text>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+          commodi error cupiditate consectetur consequatur est, at repellat
+          repellendus ex vero quis voluptates optio, ipsum similique veritatis
+          perferendis voluptatibus ipsa omnis.
+        </Text>
+        <Row $gap="20px">
           <Button label="Click me!" />
-        </Column>
-      </Row>
+          <Button $primary={true} label="No click me!" />
+        </Row>
+      </Column>
     </Container>
   );
 };
+
+export default App;
 ```
