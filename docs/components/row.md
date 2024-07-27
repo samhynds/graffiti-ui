@@ -2,12 +2,12 @@
 
 One of the three layout components in Graffiti, along with [Container](./container) and [Column](./column). Used to help you position items along the horizontal axis.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/layout-row--row-with-content&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/layout-row--row-with-content&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-row-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/layout-row--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/layout-row--docs).
 
 ## Usage
 

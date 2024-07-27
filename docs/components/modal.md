@@ -2,12 +2,12 @@
 
 Used to show a message or content over the top of the current page. Also optionally renders a full-screen overlay.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/modal-modal--standard-modal&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/modal-modal--standard-modal&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:700px; border:0; margin-top: 20px;"
      title="graffiti-modal-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/modal-modal--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/modal-modal--docs).
 
 ## Usage
 

@@ -2,12 +2,12 @@
 
 A component for displaying a notification to the user.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/notification-toast--standard-toast&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/notification-toast--standard-toast&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-toast-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/notification-toast--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/notification-toast--docs).
 
 ## Usage
 

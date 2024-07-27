@@ -2,12 +2,12 @@
 
 A full-screen overlay component that can be used to cover the whole page. Used in the [Modal](./modal) component.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/misc-overlay--light-overlay&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/misc-overlay--light-overlay&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-overlay-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/misc-overlay--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/misc-overlay--docs).
 
 ## Usage
 

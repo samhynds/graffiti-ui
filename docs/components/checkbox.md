@@ -2,12 +2,12 @@
 
 The Checkbox component is a simple checkbox input. It can be used on its own or inside the [FormWrapper](./form-wrapper) component if you have multiple inputs.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/forms-checkbox--default-checkbox&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/forms-checkbox--default-checkbox&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-checkbox-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/forms-checkbox--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/forms-checkbox--docs).
 
 ## Usage
 

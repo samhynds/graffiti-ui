@@ -2,12 +2,12 @@
 
 The standard button component. Should be used for forms, modals and actions that don't change which page the user is on. If your action changes the page, you should consider using a Navigation component.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/buttons-button--primary&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/buttons-button--primary&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-button-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/buttons-button--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/buttons-button--docs).
 
 ## Usage
 

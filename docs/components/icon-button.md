@@ -2,12 +2,12 @@
 
 The IconButton component is a variant of the standard button that displays only an icon without text. It's ideal for compact UI elements where space is limited or when the icon alone sufficiently conveys the action.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/buttons-icon--example-icon-button&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/buttons-icon--example-icon-button&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:300px; border:0; margin-top: 20px;"
      title="graffiti-iconbutton-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/buttons-icon--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/buttons-icon--docs).
 
 ## Usage
 

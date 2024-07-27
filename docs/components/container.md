@@ -2,12 +2,12 @@
 
 The container component is generally the outermost layout component set at the root or page level of your app. You can use it to set the width of the pages and how the page should be aligned.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/layout-container--center-container&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/layout-container--center-container&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-container-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/layout-container--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/layout-container--docs).
 
 ## Usage
 

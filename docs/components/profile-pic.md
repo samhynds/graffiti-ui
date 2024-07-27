@@ -2,12 +2,12 @@
 
 Displays a round image of a specified size for a user's profile picture.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/media-profile-picture--example-profile-pic&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/media-profile-picture--example-profile-pic&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-profile-picture-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/media-profile-picture--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/media-profile-picture--docs).
 
 ## Usage
 

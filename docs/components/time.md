@@ -2,12 +2,12 @@
 
 A component for displaying a date and time in a human readable format, either relative to the current time or absolute.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/time-time--absolute-time&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/time-time--absolute-time&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:200px; border:0; margin-top: 20px;"
      title="graffiti-time-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/time-time--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/time-time--docs).
 
 ## Usage
 

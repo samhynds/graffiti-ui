@@ -2,12 +2,12 @@
 
 A highlighted inline piece of text.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/text-tag--standard-tag&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/text-tag--standard-tag&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-tag-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/text-tag--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/text-tag--docs).
 
 ## Usage
 

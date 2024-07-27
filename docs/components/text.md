@@ -2,12 +2,12 @@
 
 Text is a styled typographic component for displaying text on a page. It's best used for longer pieces of text that make up major parts of a page. Smaller bits of text might be better suited to your own custom components.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/typography-text--with-lists-and-links&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/typography-text--with-lists-and-links&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-text-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/typography-text--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/typography-text--docs).
 
 ## Usage
 

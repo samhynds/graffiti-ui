@@ -2,12 +2,12 @@
 
 A standard text input component - a one-line input used for general text, emails, passwords etc. Can optionally be given a label.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/forms-text-input--text-input-with-label&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/forms-text-input--text-input-with-label&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-text-input-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/forms-text-input--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/forms-text-input--docs).
 
 ## Usage
 

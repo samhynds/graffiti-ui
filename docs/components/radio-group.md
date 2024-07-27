@@ -2,12 +2,12 @@
 
 A styled radio group component for selecting a single item from a list of items.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/forms-radio-group--radio-group-with-label&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/forms-radio-group--radio-group-with-label&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-radio-group-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/forms-radio-group--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/forms-radio-group--docs).
 
 ## Usage
 

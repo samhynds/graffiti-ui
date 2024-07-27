@@ -2,12 +2,12 @@
 
 The Card component is a simple container for content. It's designed to be used as a container for other components. If you want a container component without a border or other styling, you can use the [Container](./container), [Row](./row), or [Column](./column) components instead.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/card-card--standard-card&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/card-card--standard-card&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-card-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/card-card--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/card-card--docs).
 
 ## Usage
 

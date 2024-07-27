@@ -2,12 +2,12 @@
 
 A vertical navigation component for navigating between pages.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/navigation-vertical--vertical-navigation&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/navigation-vertical--vertical-navigation&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-navigation-vertical-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/navigation-vertical--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/navigation-vertical--docs).
 
 ## Usage
 

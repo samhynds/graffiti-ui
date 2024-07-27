@@ -2,12 +2,12 @@
 
 The column component is one of three layout components in Graffiti. It's used to help you position items on the screen. It's based on flexbox and can be used to create a column layout with a fixed width, a flexible width, or a responsive width.
 
-<iframe src="https://samhynds.github.io/graffiti-ui/?path=/story/layout-column--column-with-content&viewMode=story&shortcuts=false&singleStory=true"
+<iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/layout-column--column-with-content&viewMode=story&shortcuts=false&singleStory=true"
      style="width:100%; height:500px; border:0; margin-top: 20px;"
      title="graffiti-column-example-1"
    ></iframe>
 
-See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/?path=/docs/layout-column--docs).
+See all the examples and details in the [Storybook](https://samhynds.github.io/graffiti-ui/storybook?path=/docs/layout-column--docs).
 
 ## Usage
 
