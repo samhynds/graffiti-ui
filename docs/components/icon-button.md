@@ -24,9 +24,9 @@ const MyIconButton = () => {
 
 ## Props
 
-| Prop        | Type         | Default | Optional | Description                                                                                        |
-| ----------- | ------------ | ------- | -------- | -------------------------------------------------------------------------------------------------- |
-| `icon`      | `ReactNode`  |         | ❌       | The icon to display in the button.                                                                 |
-| `onClick`   | `() => void` |         | ❌       | The function to call when the button is clicked.                                                   |
-| `size`      | `string`     | 1 rem   | ✅       | The size of the IconButton.                                                                        |
-| `className` | `string`     |         | ✅       | The class name of the button, generally used when extending the component with a styled component. |
+| Prop        | Type         | Default | Optional | Description                                                                                           |
+| ----------- | ------------ | ------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `icon`      | `ReactNode`  |         | ❌       | The icon to display in the button.                                                                    |
+| `onClick`   | `() => void` |         | ❌       | The function to call when the button is clicked.                                                      |
+| `size`      | `string`     | 1 rem   | ✅       | The size of the IconButton.                                                                           |
+| `className` | `string`     |         | ✅       | The class name of the component, generally used when extending the component with a styled component. |

@@ -26,9 +26,9 @@ const MyCheckbox = () => {
 
 ## Props
 
-| Prop        | Type     | Default | Optional | Description                                                                                        |
-| ----------- | -------- | ------- | -------- | -------------------------------------------------------------------------------------------------- |
-| `label`     | `string` |         | ❌       | The label to display next to the checkbox.                                                         |
-| `className` | `string` |         | ✅       | The class name of the button, generally used when extending the component with a styled component. |
+| Prop        | Type     | Default | Optional | Description                                                                                           |
+| ----------- | -------- | ------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `label`     | `string` |         | ❌       | The label to display next to the checkbox.                                                            |
+| `className` | `string` |         | ✅       | The class name of the component, generally used when extending the component with a styled component. |
 
 All other props will also be passed to the underlying input element.

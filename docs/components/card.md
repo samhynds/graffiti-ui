@@ -34,7 +34,7 @@ const MyCard = () => {
 
 ## Props
 
-| Prop        | Type        | Default | Optional | Description                                                                                        |
-| ----------- | ----------- | ------- | -------- | -------------------------------------------------------------------------------------------------- |
-| `children`  | `ReactNode` |         | ❌       | The content of the Card.                                                                           |
-| `className` | `string`    |         | ✅       | The class name of the button, generally used when extending the component with a styled component. |
+| Prop        | Type        | Default | Optional | Description                                                                                           |
+| ----------- | ----------- | ------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `children`  | `ReactNode` |         | ❌       | The content of the Card.                                                                              |
+| `className` | `string`    |         | ✅       | The class name of the component, generally used when extending the component with a styled component. |

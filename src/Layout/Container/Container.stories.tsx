@@ -21,7 +21,7 @@ export const CenterContainer: Story = {
     $flexDirection: "row",
     children: (
       <>
-        <Heading $level={3}>Card Title</Heading>
+        <Heading $level={3}>Container Title</Heading>
         <Text>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque

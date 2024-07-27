@@ -11,8 +11,7 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Get Started", link: "/overview/getting-started" },
       { text: "Theme", link: "/theme/overview" },
-      { text: "Layout", link: "/layout/overview" },
-      { text: "Components", link: "/components/overview" },
+      { text: "Components", link: "/components/button" },
       { text: "Live Demos", link: "/examples" },
     ],
 
@@ -21,6 +20,7 @@ export default defineConfig({
         text: "Overview",
         items: [
           { text: "Getting Started", link: "/overview/getting-started" },
+          { text: "Layout", link: "/overview/layout" },
           { text: "Styling", link: "/overview/styling" },
           { text: "Release Notes", link: "/overview/release-notes" },
         ],
@@ -34,17 +34,8 @@ export default defineConfig({
         ],
       },
       {
-        text: "Layout",
-        items: [
-          { text: "Overview", link: "/layout/overview" },
-          { text: "Flex", link: "/layout/flex" },
-          { text: "Page", link: "/layout/page" },
-        ],
-      },
-      {
         text: "Components",
         items: [
-          { text: "Overview", link: "/components/overview" },
           { text: "Button", link: "/components/button" },
           { text: "Button (Icon)", link: "/components/icon-button" },
           { text: "Card", link: "/components/card" },

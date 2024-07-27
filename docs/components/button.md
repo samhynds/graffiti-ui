@@ -30,11 +30,11 @@ const MyButton = () => {
 
 ## Props
 
-| Prop        | Type                                               | Default    | Optional | Description                                                                                        |
-| ----------- | -------------------------------------------------- | ---------- | -------- | -------------------------------------------------------------------------------------------------- |
-| `$primary`  | `boolean`                                          | `false`    | ✅       | If `true` the button will be filled with the primary accent color of the theme.                    |
-| `label`     | `string`                                           |            | ❌       | The text label inside the button.                                                                  |
-| `size`      | `"small"` \| `"medium"` \| `"large"` \| `"square"` | `"medium"` | ✅       | The size of the button.                                                                            |
-| `icon`      | `ReactNode`                                        |            | ✅       | The icon that should appear next to the text label.                                                |
-| `onClick`   | `() => void`                                       |            | ✅       | The function to call when the button is clicked.                                                   |
-| `className` | `string`                                           |            | ✅       | The class name of the button, generally used when extending the component with a styled component. |
+| Prop        | Type                                               | Default    | Optional | Description                                                                                           |
+| ----------- | -------------------------------------------------- | ---------- | -------- | ----------------------------------------------------------------------------------------------------- |
+| `$primary`  | `boolean`                                          | `false`    | ✅       | If `true` the button will be filled with the primary accent color of the theme.                       |
+| `label`     | `string`                                           |            | ❌       | The text label inside the button.                                                                     |
+| `size`      | `"small"` \| `"medium"` \| `"large"` \| `"square"` | `"medium"` | ✅       | The size of the button.                                                                               |
+| `icon`      | `ReactNode`                                        |            | ✅       | The icon that should appear next to the text label.                                                   |
+| `onClick`   | `() => void`                                       |            | ✅       | The function to call when the button is clicked.                                                      |
+| `className` | `string`                                           |            | ✅       | The class name of the component, generally used when extending the component with a styled component. |
