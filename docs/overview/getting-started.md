@@ -25,7 +25,7 @@ yarn add @samgl/graffiti-ui
 
 ## Usage
 
-To get started with Graffiti, you'll need to import the themes, global styles, and optionally react-router if you want to use the navigation components. Then, wrap your React app like so:
+To get started with Graffiti, you'll need to import the ThemeProvider and the theme you want to use. You'll also need to optionally import react-router if you want to use the navigation components. Then, wrap your React app like so:
 
 ```tsx
 // main.tsx - your main entry point
