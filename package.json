@@ -34,7 +34,7 @@
     "build-storybook": "storybook build --output-dir='./pages/storybook'",
     "test": "LANG='en_GB.UTF-8'; vitest run --coverage",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs --outDir='./pages/docs' --base='/docs/'",
+    "docs:build": "vitepress build docs --outDir='./pages/docs' --base='/graffiti-ui/docs/'",
     "docs:preview": "vitepress preview docs",
     "docs:build:all": "npm run docs:build && npm run build-storybook"
   },
