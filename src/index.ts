@@ -3,8 +3,8 @@ import { ThemeProvider } from "styled-components";
 export { ThemeProvider };
 import { GlobalStyles } from "../src/GlobalStyles";
 export { GlobalStyles };
-import { defaultTheme } from "../src/themes/default";
-export { defaultTheme };
+import { theme } from "../src/themes/default";
+export { theme };
 
 // Buttons
 export * from "./Button/Standard";
