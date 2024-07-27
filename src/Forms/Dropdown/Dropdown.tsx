@@ -29,7 +29,7 @@ interface DropdownActiveProps {
 
 const StyledDropdownWrapper = styled.div<DropdownActiveProps>`
   margin-top: 0.5rem;
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.palette.white};
   position: relative;
   transition: box-shadow 200ms ease-out;
 
@@ -41,7 +41,7 @@ const StyledDropdownButton = styled.button<DropdownActiveProps>`
   font-size: 1rem;
   min-width: 20rem;
   padding: 0.75rem 1rem;
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.palette.white};
   color: ${({ theme }) => theme.accents.text};
   border-radius: ${({ theme }) => theme.borderRadius.md};
   border: none;
@@ -88,7 +88,7 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
   transition:
     max-height 200ms ease-out,
     box-shadow 200ms ease-out;
-  background: ${({ theme }) => theme.colors.white};
+  background: ${({ theme }) => theme.palette.white};
   width: 100%;
   max-height: 0;
   position: absolute;
@@ -121,7 +121,7 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
 
     &:hover {
       background: ${({ theme }) => theme.accents.primary.mid};
-      color: ${({ theme }) => theme.colors.white};
+      color: ${({ theme }) => theme.palette.white};
     }
   }
 

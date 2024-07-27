@@ -14,7 +14,7 @@ export interface ToastProps {
 }
 
 const StyledToast = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.palette.white};
   border: 1px solid ${({ theme }) => theme.accents.border};
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;

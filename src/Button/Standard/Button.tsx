@@ -79,10 +79,10 @@ const StyledButton = styled.button<ButtonProps>`
   }};
 
   color: ${({ $primary, theme }) =>
-    $primary ? theme.colors.white : theme.accents.text};
+    $primary ? theme.palette.white : theme.accents.text};
 
   background-color: ${({ $primary, theme }) =>
-    $primary ? theme.accents.primary.mid : theme.colors.white};
+    $primary ? theme.accents.primary.mid : theme.palette.white};
 
   border: 0.0625rem solid
     ${({ $primary, theme }) =>

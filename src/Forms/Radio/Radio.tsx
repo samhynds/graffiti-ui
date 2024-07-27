@@ -18,7 +18,7 @@ export interface RadioProps extends InputHTMLAttributes<HTMLInputElement> {
 const StyledRadio = styled.input<Omit<RadioProps, "label">>`
   width: 1.125rem;
   height: 1.125rem;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.palette.white};
   margin-right: 0.625rem;
   accent-color: ${({ theme }) => theme.accents.primary.mid};
 `;

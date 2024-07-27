@@ -42,8 +42,8 @@ export interface TagProps {
 const StyledTag = styled.span<{ $color: TagProps["$color"] }>`
   padding: 0.125rem 0.375rem;
   border-radius: ${({ theme }) => theme.borderRadius.md};
-  color: ${({ $color, theme }) => theme.colors[$color][800]};
-  background: ${({ $color, theme }) => theme.colors[$color][200]};
+  color: ${({ $color, theme }) => theme.palette[$color][800]};
+  background: ${({ $color, theme }) => theme.palette[$color][200]};
 `;
 
 /**

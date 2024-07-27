@@ -37,7 +37,7 @@ const StyledText = styled.div<TextProps>`
     transition: background-color 200ms ease-out;
 
     &:hover {
-      background-color: ${({ theme }) => theme.colors.blue[100]};
+      background-color: ${({ theme }) => theme.palette.blue[100]};
     }
   }
 `;

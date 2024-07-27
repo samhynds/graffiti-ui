@@ -31,7 +31,7 @@ const StyledTable = styled.table`
     tr {
       transition: background 200ms ease-out;
       &:hover {
-        background: ${({ theme }) => theme.colors.slate[100]};
+        background: ${({ theme }) => theme.palette.slate[100]};
       }
 
       td {

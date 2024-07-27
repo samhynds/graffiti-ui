@@ -14,7 +14,7 @@ export interface CardProps {
 }
 
 const StyledCard = styled.div`
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.palette.white};
   border: 1px solid ${({ theme }) => theme.accents.border};
   border-radius: 0.25rem;
   padding: 2rem 2.25rem;

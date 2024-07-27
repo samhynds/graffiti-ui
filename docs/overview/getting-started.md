@@ -32,14 +32,14 @@ To get started with Graffiti, you'll need to import the themes, global styles, a
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider, defaultTheme, GlobalStyles } from "@samgl/graffiti-ui";
+import { ThemeProvider, theme, GlobalStyles } from "@samgl/graffiti-ui";
 
 import App from "./App.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={defaultTheme}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <App />
       </ThemeProvider>

@@ -1,4 +1,4 @@
-export const colors = {
+export const palette = {
   black: "#000",
   white: "#fff",
   slate: {
@@ -310,15 +310,15 @@ export const theme = {
   },
   accents: {
     primary: {
-      light: colors.blue[100],
-      mid: colors.blue[600],
-      dark: colors.blue[800],
+      light: palette.blue[100],
+      mid: palette.blue[600],
+      dark: palette.blue[800],
     },
-    background: colors.white,
-    heading: colors.slate[900],
-    text: colors.slate[700],
-    link: colors.blue[600],
-    border: colors.slate[200],
+    background: palette.white,
+    heading: palette.slate[900],
+    text: palette.slate[700],
+    link: palette.blue[600],
+    border: palette.slate[200],
   },
   fonts: {
     heading: "'DM Sans', sans-serif",
@@ -328,5 +328,5 @@ export const theme = {
     serif: "'Lora', serif",
     mono: "'Anonymous Pro', monospace",
   },
-  colors,
+  palette,
 };

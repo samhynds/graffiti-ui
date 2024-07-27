@@ -18,7 +18,7 @@ export interface CheckboxProps extends HTMLAttributes<HTMLInputElement> {
 const StyledCheckbox = styled.input`
   width: 1.125rem;
   height: 1.125rem;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.palette.white};
   border-radius: ${({ theme }) => theme.borderRadius.md};
   border: 0.125rem solid ${({ theme }) => theme.accents.border};
   margin-right: 0.625rem;
