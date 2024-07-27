@@ -18,7 +18,7 @@ export const ExampleVideo: Story = {
   args: {
     sources: [
       {
-        src: "/aurora.mp4",
+        src: "/graffiti-ui/storybook/aurora.mp4",
         type: "video/mp4",
       },
     ],
