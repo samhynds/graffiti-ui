@@ -79,7 +79,7 @@ const StyledNavigationLink = styled(Link)<
 export const NavigationLink = ({
   text,
   icon,
-  $linkSize,
+  $linkSize = "md",
   to,
   className,
 }: NavigationLinkProps) => {

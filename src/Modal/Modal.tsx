@@ -31,6 +31,7 @@ const StyledModal = styled.div`
 `;
 
 const StyledModalHeader = styled.header`
+  font-family: ${({ theme }) => theme.fonts.heading};
   display: flex;
   justify-content: space-between;
   align-items: center;

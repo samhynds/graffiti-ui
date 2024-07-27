@@ -51,7 +51,7 @@ const StyledNavigationHorizontal = styled.div<
 
 export const NavigationHorizontal = ({
   links,
-  $linkSize,
+  $linkSize = "md",
   className,
 }: NavigationHorizontalProps) => {
   return (

@@ -51,7 +51,7 @@ const StyledNavigationVertical = styled.div<
 
 export const NavigationVertical = ({
   links,
-  $linkSize,
+  $linkSize = "md",
   className,
 }: NavigationVerticalProps) => {
   return (
