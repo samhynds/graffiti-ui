@@ -4,7 +4,7 @@ There are two ways to change the look of Graffiti components: by changing the th
 
 ## Theme
 
-Graffiti provides a default theme which you can use, or optionally you can copy it to create your own theme. The theme is responsible for fonts and colours across all of the components.
+Graffiti provides a default theme which you can use, or optionally you can copy it to create your own theme. The theme is responsible for fonts and colours across all of the components. See more about the theme in the [Theme](../theme/overview) documentation.
 
 If you want to make specific styling changes to the components, you'll likely want to extend the component styles themselves.
 

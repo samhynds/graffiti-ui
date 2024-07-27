@@ -30,9 +30,7 @@ export default defineConfig({
         items: [
           { text: "Overview", link: "/theme/overview" },
           { text: "Colour", link: "/theme/colour" },
-          { text: "Typography", link: "/theme/typography" },
           { text: "Global Styles", link: "/theme/global-styles" },
-          { text: "Style Guide", link: "/theme/style-guide" },
         ],
       },
       {
