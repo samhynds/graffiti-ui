@@ -2,9 +2,6 @@
 
 # Graffiti UI
 
-> [!NOTE]
-> Graffiti is a work-in-progress and a stable version has not yet been released.
-
 Graffiti is a UI component library implemented in React with TypeScript. It's designed to have simple and clear standard styling which is customisable for use in UIs with various colour schemes and aesthetics.
 
 Graffiti UI is intended for use with:
