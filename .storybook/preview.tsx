@@ -1,10 +1,9 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
-import { GlobalStyles } from "../src/GlobalStyles";
 import { theme } from "../src/themes/default";
 
 import "./global.css";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "../src/ThemeProvider";
 
 const preview: Preview = {
   parameters: {
@@ -19,7 +18,6 @@ const preview: Preview = {
   decorators: [
     (Story) => (
       <ThemeProvider theme={theme}>
-        <GlobalStyles />
         <Story />
       </ThemeProvider>
     ),

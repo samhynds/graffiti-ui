@@ -1,18 +1,11 @@
 /* eslint-disable react-refresh/only-export-components */
 import React, { ReactElement } from "react";
 import { render, RenderOptions } from "@testing-library/react";
-import { ThemeProvider } from "styled-components";
-
-import { GlobalStyles } from "../src/GlobalStyles";
+import { ThemeProvider } from "../src/ThemeProvider";
 import { theme } from "../src/themes/default";
 
 const ComponentWrapper = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      {children}
-    </ThemeProvider>
-  );
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 
 const customRender = (

@@ -15,7 +15,7 @@ The default theme is located in the [src/themes/default.ts](https://github.com/s
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider, GlobalStyles } from "@samgl/graffiti-ui";
+import { ThemeProvider } from "@samgl/graffiti-ui";
 import { customTheme } from "./customTheme";
 
 import App from "./App.tsx";
@@ -24,7 +24,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={customTheme}>
-        <GlobalStyles />
         <App />
       </ThemeProvider>
     </BrowserRouter>

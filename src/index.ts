@@ -1,8 +1,6 @@
 // Themes and Styles
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "./ThemeProvider";
 export { ThemeProvider };
-import { GlobalStyles } from "../src/GlobalStyles";
-export { GlobalStyles };
 import { theme } from "../src/themes/default";
 export { theme };
 
