@@ -3,7 +3,7 @@
 A custom video player component for displaying videos on a page.
 
 <iframe src="https://samhynds.github.io/graffiti-ui/storybook?path=/story/media-video--example-video&viewMode=story&shortcuts=false&singleStory=true"
-     style="width:100%; height:500px; border:0; margin-top: 20px;"
+     style="width:100%; height:600px; border:0; margin-top: 20px;"
      title="graffiti-video-example-1"
    ></iframe>
 

@@ -18,7 +18,7 @@ export const ExampleVideo: Story = {
   args: {
     sources: [
       {
-        src: "http://localhost:8000/test2.mp4",
+        src: "/aurora.mp4",
         type: "video/mp4",
       },
     ],
