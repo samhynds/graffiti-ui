@@ -31,11 +31,12 @@
     "build:watch": "rollup -cw",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --output-dir='./pages/storybook'",
     "test": "LANG='en_GB.UTF-8'; vitest run --coverage",
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:build": "vitepress build docs --outDir='./pages/docs' --base='/docs/'",
+    "docs:preview": "vitepress preview docs",
+    "docs:build:all": "npm run docs:build && npm run build-storybook"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.15"

@@ -1,6 +1,6 @@
 # Layout
 
-The layout in Graffiti is based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) layout model. You can implement the Flexbox layout model in your own projects by using the [Container](./container), [Row](./row) and [Column](./column) components.
+The layout in Graffiti is based on [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) layout model. You can implement the Flexbox layout model in your own projects by using the [Container](../components/container), [Row](../components/row) and [Column](../components/column) components.
 
 ## Container
 
@@ -21,7 +21,7 @@ const MyContainer = () => {
 
 ## Rows and Columns
 
-Then you can use the [Row](./row) and [Column](./column) components to create a layout inside the container where items are arranged side by side (Row) or vertically (Column).
+Then you can use the [Row](../components/row) and [Column](../components/column) components to create a layout inside the container where items are arranged side by side (Row) or vertically (Column).
 
 ```tsx
 import { Container, Row, Column, Heading, Text } from "@samgl/graffiti-ui";
