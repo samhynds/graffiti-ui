@@ -32,7 +32,7 @@ const StyledIconButton = styled.button<Pick<IconButtonProps, "$size">>`
   }
 
   &:hover {
-    color: ${({ theme }) => theme.colors.link.text};
+    color: ${({ theme }) => theme.accents.link};
   }
 `;
 

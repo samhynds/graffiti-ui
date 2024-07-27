@@ -11,11 +11,11 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     font-size: 16px;
-    font-family: ${(props) => props.theme.font};
+    font-family: ${({ theme }) => theme.fonts.body};
   }
 
   button, input, select, option {
-    font-family: ${(props) => props.theme.font};
+    font-family: ${({ theme }) => theme.fonts.body};
     transition: background-color 200ms ease-out;
   }
 

@@ -21,7 +21,8 @@ export interface HeadingProps {
 // While this component is defined as an "h1" here, it will be overridden
 // by the $level prop passed to the component.
 const StyledHeading = styled.h1<HeadingProps>`
-  color: ${(props) => props.theme.colors.grey.xdark};
+  font-family: ${({ theme }) => theme.fonts.heading};
+  color: ${({ theme }) => theme.accents.heading};
   font-weight: 600;
   margin: 1rem 0;
 
@@ -45,13 +46,13 @@ const StyledHeading = styled.h1<HeadingProps>`
         `;
       case 5:
         return `
-          color: ${theme.colors.grey.dark};
+          color: ${theme.accents.text};
           font-weight: 500;
           font-size: 1.375rem;
         `;
       case 6:
         return `
-          color: ${theme.colors.grey.dark};
+          color: ${theme.accents.text};
           font-weight: 500;
           font-size: 1rem;
           text-transform: uppercase;

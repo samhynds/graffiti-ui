@@ -14,7 +14,7 @@ export interface TextProps {
 }
 
 const StyledText = styled.div<TextProps>`
-  color: ${(props) => props.theme.colors.grey.dark};
+  color: ${({ theme }) => theme.accents.text};
   font-size: 1rem;
   line-height: 1.7rem;
 
@@ -33,11 +33,11 @@ const StyledText = styled.div<TextProps>`
   }
 
   a {
-    color: ${(props) => props.theme.colors.blue.dark};
+    color: ${({ theme }) => theme.accents.link};
     transition: background-color 200ms ease-out;
 
     &:hover {
-      background-color: ${(props) => props.theme.colors.blue.light};
+      background-color: ${({ theme }) => theme.colors.blue[100]};
     }
   }
 `;

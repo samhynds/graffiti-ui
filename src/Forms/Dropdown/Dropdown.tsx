@@ -29,21 +29,21 @@ interface DropdownActiveProps {
 
 const StyledDropdownWrapper = styled.div<DropdownActiveProps>`
   margin-top: 0.5rem;
-  background: ${(props) => props.theme.colors.white};
+  background: ${({ theme }) => theme.colors.white};
   position: relative;
   transition: box-shadow 200ms ease-out;
 
-  ${(props) =>
-    props.$isActive && "box-shadow: 0 0 0.5rem 0 hsla(0, 0%, 0%, 0.1);"}
+  ${({ $isActive }) =>
+    $isActive && "box-shadow: 0 0 0.5rem 0 hsla(0, 0%, 0%, 0.1);"}
 `;
 
 const StyledDropdownButton = styled.button<DropdownActiveProps>`
   font-size: 1rem;
   min-width: 20rem;
   padding: 0.75rem 1rem;
-  background: ${(props) => props.theme.colors.white};
-  color: ${(props) => props.theme.colors.grey.dark};
-  border-radius: ${(props) => props.theme.borderRadius.standard};
+  background: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.accents.text};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
   border: none;
   display: flex;
   flex-direction: row;
@@ -53,11 +53,11 @@ const StyledDropdownButton = styled.button<DropdownActiveProps>`
   position: relative;
   z-index: 200;
 
-  border-radius: ${(props) => props.theme.borderRadius.standard};
-  border: 1px solid ${(props) => props.theme.colors.grey.light};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
+  border: 1px solid ${({ theme }) => theme.accents.border};
 
-  ${(props) => {
-    if (props.$isActive) {
+  ${({ $isActive }) => {
+    if ($isActive) {
       return `
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -72,8 +72,8 @@ const StyledDropdownButtonArrow = styled.div<DropdownActiveProps>`
   flex-direction: column;
   justify-content: space-around;
 
-  ${(props) => {
-    if (props.$isActive) {
+  ${({ $isActive }) => {
+    if ($isActive) {
       return `
         transform: rotate(180deg);
       `;
@@ -88,22 +88,22 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
   transition:
     max-height 200ms ease-out,
     box-shadow 200ms ease-out;
-  background: ${(props) => props.theme.colors.white};
+  background: ${({ theme }) => theme.colors.white};
   width: 100%;
   max-height: 0;
   position: absolute;
   z-index: 175;
 
-  ${(props) => {
-    if (props.$isActive) {
+  ${({ theme, $isActive }) => {
+    if ($isActive) {
       return `
         box-shadow: 0 0 0.5rem 0 hsla(0, 0%, 0%, 0.1);
         max-height: 30rem;
         overflow-y: scroll;
-        border: 1px solid ${props.theme.colors.grey.light};
+        border: 1px solid ${theme.accents.border};
         border-top: none;
-        border-bottom-left-radius: ${props.theme.borderRadius.standard};
-        border-bottom-right-radius: ${props.theme.borderRadius.standard};
+        border-bottom-left-radius: ${theme.borderRadius.md};
+        border-bottom-right-radius: ${theme.borderRadius.md};
   `;
     }
   }}
@@ -115,15 +115,13 @@ const StyledDropdownItems = styled.div<DropdownActiveProps>`
     font-weight: 400;
 
     &:last-child {
-      border-bottom-right-radius: ${(props) =>
-        props.theme.borderRadius.standard};
-      border-bottom-left-radius: ${(props) =>
-        props.theme.borderRadius.standard};
+      border-bottom-right-radius: ${({ theme }) => theme.borderRadius.md};
+      border-bottom-left-radius: ${({ theme }) => theme.borderRadius.md};
     }
 
     &:hover {
-      background: ${(props) => props.theme.colors.blue.mid};
-      color: ${(props) => props.theme.colors.white};
+      background: ${({ theme }) => theme.accents.primary.mid};
+      color: ${({ theme }) => theme.colors.white};
     }
   }
 

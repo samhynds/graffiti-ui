@@ -48,10 +48,10 @@ const StyledButton = styled.button<ButtonProps>`
   align-items: center;
   font-weight: 500;
   cursor: pointer;
-  border-radius: ${(props) => props.theme.borderRadius.standard};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
 
-  padding: ${(props) => {
-    switch (props.size) {
+  padding: ${({ size }) => {
+    switch (size) {
       case "large":
         return "0.8rem 1.25rem";
       case "medium":
@@ -65,8 +65,8 @@ const StyledButton = styled.button<ButtonProps>`
     }
   }};
 
-  font-size: ${(props) => {
-    switch (props.size) {
+  font-size: ${({ size }) => {
+    switch (size) {
       case "large":
         return "1.25rem";
       case "medium":
@@ -78,23 +78,19 @@ const StyledButton = styled.button<ButtonProps>`
     }
   }};
 
-  color: ${(props) =>
-    props.$primary ? props.theme.colors.white : props.theme.colors.grey.dark};
+  color: ${({ $primary, theme }) =>
+    $primary ? theme.colors.white : theme.accents.text};
 
-  background-color: ${(props) =>
-    props.$primary ? props.theme.colors.blue.mid : props.theme.colors.white};
+  background-color: ${({ $primary, theme }) =>
+    $primary ? theme.accents.primary.mid : theme.colors.white};
 
   border: 0.0625rem solid
-    ${(props) =>
-      props.$primary
-        ? props.theme.colors.blue.dark
-        : props.theme.colors.grey.light};
+    ${({ $primary, theme }) =>
+      $primary ? theme.accents.primary.dark : theme.accents.border};
 
   &:hover {
-    background-color: ${(props) =>
-      props.$primary
-        ? props.theme.colors.blue.dark
-        : props.theme.colors.grey.light};
+    background-color: ${({ $primary, theme }) =>
+      $primary ? theme.accents.primary.dark : theme.accents.border};
   }
 `;
 
@@ -111,11 +107,6 @@ const StyledIcon = styled.span<IconProps>`
   }
 `;
 
-/**
- * The standard button component. Should be used for forms, modals and actions
- * that don't change which page the user is on. If your action changes the page,
- * you should consider using an Anchor component.
- */
 export const Button = ({
   label,
   icon,

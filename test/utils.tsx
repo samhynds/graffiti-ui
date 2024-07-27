@@ -4,11 +4,11 @@ import { render, RenderOptions } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 
 import { GlobalStyles } from "../src/GlobalStyles";
-import { defaultTheme } from "../src/themes/default";
+import { theme } from "../src/themes/default";
 
 const ComponentWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyles />
       {children}
     </ThemeProvider>

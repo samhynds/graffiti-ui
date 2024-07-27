@@ -17,8 +17,8 @@ export interface ModalProps {
 }
 
 const StyledModal = styled.div`
-  background-color: ${(props) => props.theme.colors.white};
-  border: 1px solid ${(props) => props.theme.colors.grey.light};
+  background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.accents.border};
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   padding: 2rem 2.25rem;
@@ -38,14 +38,14 @@ const StyledModalHeader = styled.header`
 `;
 
 const StyledModalTitle = styled.h3`
-  color: ${(props) => props.theme.colors.grey.xdark};
+  color: ${({ theme }) => theme.accents.heading};
   font-weight: 600;
   font-size: 2rem;
   margin: 0;
 `;
 
 const StyledToastSubtitle = styled.div`
-  color: ${(props) => props.theme.colors.grey.dark};
+  color: ${({ theme }) => theme.accents.text};
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
@@ -63,7 +63,7 @@ const StyledModalCloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${(props) => props.theme.colors.grey.dark};
+  color: ${({ theme }) => theme.accents.text};
   position: absolute;
   top: 1.125rem;
   right: 1.125rem;

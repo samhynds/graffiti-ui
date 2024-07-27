@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 export const StandardTag: Story = {
   args: {
     label: "Hello, this is a tag",
-    $color: "aqua",
+    $color: "cyan",
   },
 };
 

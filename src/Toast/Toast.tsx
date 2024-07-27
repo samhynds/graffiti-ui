@@ -14,8 +14,8 @@ export interface ToastProps {
 }
 
 const StyledToast = styled.div`
-  background-color: ${(props) => props.theme.colors.white};
-  border: 1px solid ${(props) => props.theme.colors.grey.light};
+  background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.accents.border};
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
   border-radius: 0.25rem;
   padding: 1rem;
@@ -29,7 +29,7 @@ const StyledToast = styled.div`
 const StyledToastTitle = styled.div`
   font-size: 1rem;
   font-weight: 500;
-  color: ${(props) => props.theme.colors.grey.xdark};
+  color: ${({ theme }) => theme.accents.heading};
   padding-right: 2rem;
 `;
 
@@ -37,7 +37,7 @@ const StyledToastDescription = styled.div`
   font-size: 0.875rem;
   line-height: 1.5rem;
   font-weight: 400;
-  color: ${(props) => props.theme.colors.grey.dark};
+  color: ${({ theme }) => theme.accents.text};
 `;
 
 const StyledToastButtonWrapper = styled.div`
@@ -51,7 +51,7 @@ const StyledToastCloseButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  color: ${(props) => props.theme.colors.grey.dark};
+  color: ${({ theme }) => theme.accents.text};
 `;
 
 const StyledToastHeader = styled.header`

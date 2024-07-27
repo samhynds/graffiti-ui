@@ -7,17 +7,31 @@ export interface TagProps {
   label: string;
 
   /**
-   * The colour of the tag.
+   * The colour of the tag. Should match a colour from the theme.
    */
   $color:
-    | "aqua"
-    | "grey"
-    | "purple"
-    | "green"
+    | "slate"
+    | "gray"
+    | "zinc"
+    | "neutral"
+    | "stone"
     | "red"
-    | "pink"
     | "orange"
-    | "yellow";
+    | "amber"
+    | "yellow"
+    | "lime"
+    | "green"
+    | "emerald"
+    | "teal"
+    | "cyan"
+    | "sky"
+    | "blue"
+    | "indigo"
+    | "violet"
+    | "purple"
+    | "fuchsia"
+    | "pink"
+    | "rose";
 
   /**
    * Allows component to be extended by consumers.
@@ -27,9 +41,9 @@ export interface TagProps {
 
 const StyledTag = styled.span<{ $color: TagProps["$color"] }>`
   padding: 0.125rem 0.375rem;
-  border-radius: ${(props) => props.theme.borderRadius.standard};
-  color: ${(props) => props.theme.colors[props.$color].dark};
-  background: ${(props) => props.theme.colors[props.$color].light};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
+  color: ${({ $color, theme }) => theme.colors[$color][800]};
+  background: ${({ $color, theme }) => theme.colors[$color][200]};
 `;
 
 /**

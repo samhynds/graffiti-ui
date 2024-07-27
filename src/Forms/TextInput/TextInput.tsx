@@ -18,13 +18,13 @@ export interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
 const StyledTextInput = styled.input<TextInputProps>`
   font-size: 1rem;
   padding: 0.75rem 1rem;
-  color: ${(props) => props.theme.colors.grey.dark};
-  border-radius: ${(props) => props.theme.borderRadius.standard};
-  border: 0.125rem solid ${(props) => props.theme.colors.grey.light};
+  color: ${({ theme }) => theme.accents.text};
+  border-radius: ${({ theme }) => theme.borderRadius.md};
+  border: 0.125rem solid ${({ theme }) => theme.accents.border};
   margin-top: 0.5rem;
 
   &:focus {
-    border-color: ${(props) => props.theme.colors.blue.mid};
+    border-color: ${({ theme }) => theme.accents.primary.mid};
   }
 `;
 

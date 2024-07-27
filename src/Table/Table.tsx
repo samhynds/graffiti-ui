@@ -13,13 +13,13 @@ export interface TableProps {
 }
 
 const StyledTable = styled.table`
-  border: 1px solid ${(props) => props.theme.colors.grey.light};
+  border: 1px solid ${({ theme }) => theme.accents.border};
   border-radius: 0.25rem;
   border-spacing: 0;
 
   thead {
     text-align: left;
-    color: ${(props) => props.theme.colors.grey.mid};
+    color: ${({ theme }) => theme.accents.heading};
 
     th {
       padding: 0.625rem 1.25rem;
@@ -31,12 +31,12 @@ const StyledTable = styled.table`
     tr {
       transition: background 200ms ease-out;
       &:hover {
-        background: ${(props) => props.theme.colors.grey.xlight};
+        background: ${({ theme }) => theme.colors.slate[100]};
       }
 
       td {
         padding: 0.625rem 2rem 0.625rem 1.25rem;
-        color: ${(props) => props.theme.colors.grey.dark};
+        color: ${({ theme }) => theme.accents.text};
       }
     }
   }

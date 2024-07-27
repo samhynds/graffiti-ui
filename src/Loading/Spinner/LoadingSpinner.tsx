@@ -13,12 +13,12 @@ export interface LoadingSpinnerProps {
 }
 
 const StyledLoadingSpinner = styled.div<LoadingSpinnerProps>`
-  width: ${(props) => props.$size};
-  height: ${(props) => props.$size};
-  border: ${(props) =>
-    `${props.$ringWidth} solid ${props.$ringColor || props.theme.colors.blue.xlight}`};
-  border-bottom-color: ${(props) =>
-    props.$arcColor || props.theme.colors.blue.mid};
+  width: ${({ $size }) => $size};
+  height: ${({ $size }) => $size};
+  border: ${({ theme, $ringWidth, $ringColor }) =>
+    `${$ringWidth} solid ${$ringColor || theme.accents.primary.light}`};
+  border-bottom-color: ${({ theme, $arcColor }) =>
+    $arcColor || theme.accents.primary.mid};
   border-radius: 50%;
   display: inline-flex;
   box-sizing: border-box;
