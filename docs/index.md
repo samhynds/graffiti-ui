@@ -11,7 +11,7 @@ hero:
       link: /overview/getting-started
     - theme: alt
       text: Live Demos
-      link: /api-examples
+      link: https://samhynds.github.io/graffiti-demos/
 
 features:
   - title: Wide selection of components

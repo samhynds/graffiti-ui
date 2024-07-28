@@ -12,7 +12,10 @@ export default defineConfig({
       { text: "Get Started", link: "/overview/getting-started" },
       { text: "Theme", link: "/theme/overview" },
       { text: "Components", link: "/components/button" },
-      { text: "Live Demos", link: "/examples" },
+      {
+        text: "Live Demos",
+        link: "https://samhynds.github.io/graffiti-demos/",
+      },
     ],
 
     sidebar: [

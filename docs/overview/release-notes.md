@@ -4,7 +4,7 @@
 
 The first stable release of Graffiti UI which includes a number of components, documentation, storybook examples and a live demo site.
 
-Live demo site: https://samhynds.github.io/graffiti-demo
+Live demo site: https://samhynds.github.io/graffiti-demos/
 
 ### Changelog
 
