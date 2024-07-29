@@ -18,6 +18,6 @@ features:
     details: Build your UI quickly with a wide selection of well-designed components
   - title: Themeable
     details: Create a consistent look that matches your brand with a themeable design system
-  - title: Works on all devices
+  - title: "Coming soon: Works on all devices"
     details: Built with responsive design in mind, so it works well on all devices
 ---
